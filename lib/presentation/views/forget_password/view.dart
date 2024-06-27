@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:t_grow/data/core/local/app_local.dart';
 import '../../../app/app_colors.dart';
 import '../../../app/app_images.dart';
 import '../login/view.dart';
@@ -46,7 +47,7 @@ class _ForgetPasswordState extends State<ForgetPassword> {
                 child: Row(
                   children: [
                     Text(
-                      "Forgot Password ?",
+                      "31".tr(context),
                       style: GoogleFonts.montserrat(
                           color: AppColors.fontColor, fontSize: 24),
                     )
@@ -59,7 +60,7 @@ class _ForgetPasswordState extends State<ForgetPassword> {
                   children: [
                     Expanded(
                       child: Text(
-                        "Don't worry! It occurs. Please enter the email address linked with your account.",
+                        "32".tr(context),
                         style: GoogleFonts.montserrat(
                             color: Colors.white, fontSize: 15),
                       ),
@@ -72,7 +73,7 @@ class _ForgetPasswordState extends State<ForgetPassword> {
                 keyboardType: TextInputType.emailAddress,
                 decoration: InputDecoration(
                   filled: true,
-                  hintText: "Enter Your Email",
+                  hintText: "33".tr(context),
                   fillColor: Colors.white,
                   border: OutlineInputBorder(
                     borderSide: const BorderSide(color: Colors.white),
@@ -112,7 +113,7 @@ class _ForgetPasswordState extends State<ForgetPassword> {
                             Padding(
                               padding: const EdgeInsets.only(left: 115),
                               child: Text(
-                                "Send Code",
+                                "34".tr(context),
                                 style: GoogleFonts.montserrat(
                                     color: Colors.white, fontSize: 15),
                               ),
@@ -130,7 +131,7 @@ class _ForgetPasswordState extends State<ForgetPassword> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      "Remember Password?",
+                      "35".tr(context),
                       style:
                           GoogleFonts.montserrat(color: Colors.white, fontSize: 15),
                     ),
@@ -140,7 +141,7 @@ class _ForgetPasswordState extends State<ForgetPassword> {
                             MaterialPageRoute(builder: (builder) => const LogIn()));
                       },
                       child: Text(
-                        "Login",
+                        "8".tr(context),
                         style: GoogleFonts.montserrat(
                             color: AppColors.fontColor, fontSize: 15),
                       ),

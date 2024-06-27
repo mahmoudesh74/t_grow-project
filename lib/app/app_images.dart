@@ -7,7 +7,9 @@ class AppImages{
   static const String pic5="${imagePath}pic5.png";
   static const String pic6="${imagePath}pic6.png";
   static const String pic7="${imagePath}pic7.png";
+  static const String agri="${imagePath}agri.png";
   static const String pic8="${imagePath}pic8.png";
+  static const String frame="${imagePath}frame.png";
   static const String pic9="${imagePath}pic9.png";
   static const String pic10="${imagePath}pic10.png";
   static const String pic11="${imagePath}pic11.png";
@@ -44,6 +46,7 @@ class AppImages{
   static const String esh = "${imagePath}esh.jpg";
   static const String chatbot1 = "${imagePath}chatbot 1.png";
   static const String person_image = "${imagePath}person_image.jpg";
+  static const String planet = "${imagePath}planet.jpg";
   static const String leaf1 = "${imagePath}leaf1.png";
   static const String plant1 = "${imagePath}plant 1.png";
   static const String plant2 = "${imagePath}plant2.jpg";

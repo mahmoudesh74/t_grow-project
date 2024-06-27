@@ -3,7 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:t_grow/data/cubits/register/register_state.dart';
 import 'package:t_grow/presentation/views/login/view.dart';
 import 'package:t_grow/presentation/views/new_password/view.dart';
-import '../../../presentation/views/dio_helper.dart';
+import '../../core/helpers/dio_helper.dart';
 import '../../../presentation/views/helper_method.dart';
 
 class RegisterCubit extends Cubit<RegisterStates> {

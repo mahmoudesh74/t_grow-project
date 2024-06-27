@@ -1,9 +1,13 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:t_grow/app/app_images.dart';
+import 'package:t_grow/data/core/local/app_local.dart';
+import 'package:t_grow/data/cubits/lang/lang_cubit.dart';
 import 'package:t_grow/presentation/views/clear_notification/view.dart';
 
 import '../../../app/app_colors.dart';
+import '../../../data/cubits/lang/lang_state.dart';
 import '../../components/custom_container.dart';
 import '../about/view.dart';
 import '../help/view.dart';
@@ -67,7 +71,7 @@ class _ProfileMainState extends State<ProfileMain> {
           icon: const Icon(Icons.arrow_back_ios),
         ),
         title: Text(
-          "profile",
+          "88".tr(context),
           style: TextStyle(
               fontSize: 24.sp,
               fontWeight: FontWeight.w600,
@@ -106,7 +110,7 @@ class _ProfileMainState extends State<ProfileMain> {
                               Align(
                                 alignment: AlignmentDirectional.topStart,
                                 child: Text(
-                                  "Esh",
+                                  "116".tr(context),
                                   style: TextStyle(
                                       fontSize: 16.sp,
                                       fontWeight: FontWeight.w600,
@@ -116,7 +120,7 @@ class _ProfileMainState extends State<ProfileMain> {
                               Align(
                                 alignment: AlignmentDirectional.topStart,
                                 child: Text(
-                                  "Last sync 5/5/22",
+                                  "89".tr(context),
                                   style: TextStyle(
                                       fontSize: 16.sp,
                                       fontWeight: FontWeight.w600,
@@ -138,7 +142,7 @@ class _ProfileMainState extends State<ProfileMain> {
                 child: Align(
                     alignment: AlignmentDirectional.centerStart,
                     child: Text(
-                      "Preferences",
+                      "90".tr(context),
                       style: TextStyle(
                           fontSize: 24.sp,
                           fontWeight: FontWeight.w600,
@@ -176,7 +180,7 @@ class _ProfileMainState extends State<ProfileMain> {
                                         width: 10.w,
                                       ),
                                       Text(
-                                        "Language",
+                                        "91".tr(context),
                                         style: TextStyle(
                                             color: AppColors.greenColor,
                                             fontSize: 24.sp,
@@ -191,7 +195,7 @@ class _ProfileMainState extends State<ProfileMain> {
                                     padding: const EdgeInsets.only(
                                         left: 50, right: 50),
                                     child: Text(
-                                      "select your language",
+                                      "96".tr(context),
                                       style: TextStyle(
                                           color: AppColors.greenColor
                                               .withOpacity(.61),
@@ -209,23 +213,41 @@ class _ProfileMainState extends State<ProfileMain> {
                                   decoration: BoxDecoration(
                                       color: AppColors.lColor,
                                       borderRadius: BorderRadius.circular(24)),
-                                  child:const Column(
+                                  child: BlocBuilder<LangCubit, LangState>(
+  builder: (context, state) {
+    var bloc = BlocProvider.of<LangCubit>(context);
+    return Column(
                                     children: [
-                                      Text("English",style: TextStyle(color: AppColors.greenColor),),
-                                      Text("English",style: TextStyle(color: AppColors.clearGreenColor),),
-                                      Text("Arabic",style: TextStyle(color: AppColors.clearGreenColor),)
+                                      InkWell(
+                                        onTap:(){
+                                          bloc.changeLang('ar');
+                          },
+                                          child: Row(
+                                            children: [
+                                              Padding(
+                                                padding: const EdgeInsets.only(left: 20),
+                                                child: Text("117".tr(context),style: TextStyle(color: AppColors.greenColor,fontSize:20 ),),
+                                              ),
+                                            ],
+                                          )),
+                                      SizedBox(height: 2,),
+                                      Text("117".tr(context),style: TextStyle(color: AppColors.clearGreenColor),),
+                                      SizedBox(height: 10,),
+                                      Text("118".tr(context),style: TextStyle(color: AppColors.clearGreenColor),)
 
                                     ],
-                                  )
+                                  );
+  },
+)
                                 ),
                               ],
                             ),
                           );
                         });
                   },
-                  child: const CustomContainer(
+                  child:  CustomContainer(
                     icon: Icons.language,
-                    name: "Language",
+                    name: "91".tr(context),
                   )),
               SizedBox(
                 height: 20.h,
@@ -236,8 +258,8 @@ class _ProfileMainState extends State<ProfileMain> {
                       duration: const Duration(milliseconds: 400),
                       curve: Curves.easeIn);
                 },
-                child: const CustomContainer(
-                  name: "Notification",
+                child:  CustomContainer(
+                  name: "92".tr(context),
                   icon: Icons.notifications,
                 ),
               ),
@@ -249,9 +271,9 @@ class _ProfileMainState extends State<ProfileMain> {
                     Navigator.of(context).push(
                         MaterialPageRoute(builder: (context) => const Help()));
                   },
-                  child: const CustomContainer(
+                  child:  CustomContainer(
                     icon: Icons.help,
-                    name: "Help",
+                    name: "93".tr(context),
                   )),
               SizedBox(
                 height: 20.h,
@@ -283,7 +305,7 @@ class _ProfileMainState extends State<ProfileMain> {
                         Padding(
                           padding: const EdgeInsets.only(left: 20),
                           child: Text(
-                            "About",
+                            "94".tr(context),
                             style: TextStyle(
                                 fontSize: 16.sp,
                                 fontWeight: FontWeight.w600,
@@ -311,8 +333,8 @@ class _ProfileMainState extends State<ProfileMain> {
                     Navigator.of(context).push(MaterialPageRoute(
                         builder: (context) => const LogOut()));
                   },
-                  child: const CustomContainer(
-                    name: "Log Out",
+                  child:  CustomContainer(
+                    name: "95".tr(context),
                     icon: Icons.logout,
                   )),
             ],

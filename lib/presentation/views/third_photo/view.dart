@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:t_grow/data/core/local/app_local.dart';
+import 'package:t_grow/presentation/views/home_screen/view.dart';
 
 import '../../../app/app_colors.dart';
 import '../../../app/app_images.dart';
 import '../forth_photo/view.dart';
+import '../home2/view.dart';
 
 class ThirdPhoto extends StatefulWidget {
   const ThirdPhoto({super.key});
@@ -30,11 +33,17 @@ class _ThirdPhotoState extends State<ThirdPhoto> {
         ),
         Padding(
           padding: const EdgeInsets.only(top: 50, left: 300),
-          child: Text(
-            "Skip",
-            style: GoogleFonts.montserrat(
-                color: Colors.black, fontSize: 16, fontWeight: FontWeight.bold),
-          ),
+          child: InkWell(
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (builder) => const HomeScreen()));
+            },
+            child: Text(
+              "111".tr(context),
+              style: GoogleFonts.montserrat(color: Colors.black,
+                  fontSize: 16,fontWeight: FontWeight.bold),
+            ),
+          )
         )
       ]),
       Expanded(
@@ -49,7 +58,7 @@ class _ThirdPhotoState extends State<ThirdPhoto> {
                 child: Row(
                   children: [
                     Text(
-                      "03.",
+                      "23".tr(context),
                       style: GoogleFonts.montserrat(
                           color: Colors.white, fontSize: 32),
                     )
@@ -61,7 +70,7 @@ class _ThirdPhotoState extends State<ThirdPhoto> {
                 child: Row(
                   children: [
                     Text(
-                      "Disease Definition",
+                      "24".tr(context),
                       style: GoogleFonts.montserrat(
                           color: Colors.white, fontSize: 24),
                     )
@@ -74,7 +83,7 @@ class _ThirdPhotoState extends State<ThirdPhoto> {
                   children: [
                     Expanded(
                         child: Text(
-                      "Identify plant diseases and learn all about their prevention .",
+                          "25".tr(context),
                       style: GoogleFonts.montserrat(
                           color: Colors.white, fontSize: 14),
                     ))

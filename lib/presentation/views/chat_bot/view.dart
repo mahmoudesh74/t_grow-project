@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:t_grow/app/app_images.dart';
+import 'package:t_grow/data/core/local/app_local.dart';
 import 'package:t_grow/presentation/components/custom_bottom.dart';
 
 import '../../../app/app_colors.dart';
@@ -24,7 +25,7 @@ class _ChatBotState extends State<ChatBot> {
 
         },icon: const Icon(Icons.arrow_back_ios),),
         title:  Text(
-          "Chat bot",
+          "53".tr(context),
           style: TextStyle(
               fontSize: 24.sp,
               fontWeight: FontWeight.w600,
@@ -38,13 +39,13 @@ class _ChatBotState extends State<ChatBot> {
 
              SizedBox(height: 150.h),
              Text(
-              "Hello i am your virtual guide",
+                 "84".tr(context),
               style: TextStyle(fontSize: 16.sp, fontWeight: FontWeight.w600,color: AppColors.greenColor)),
                Text(
-              "and will help you",
+                   "85".tr(context),
               style: TextStyle(fontSize: 16.sp, fontWeight: FontWeight.w600,color: AppColors.greenColor)),
                  Text(
-              "in planting",
+                   "86".tr(context),
               style: TextStyle(fontSize: 16.sp, fontWeight: FontWeight.w600,color: AppColors.greenColor),
 
             ),
@@ -54,7 +55,7 @@ class _ChatBotState extends State<ChatBot> {
             InkWell(onTap: (){
               Navigator.push(context, MaterialPageRoute(builder: (context)=>const ChatBot1()));
             },
-                child: CustomBottom(name: "start", width: 203.w, height: 37.h))
+                child: CustomBottom(name: "87".tr(context), width: 203.w, height: 37.h))
 
 
 

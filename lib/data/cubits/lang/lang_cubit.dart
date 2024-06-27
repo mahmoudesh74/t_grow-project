@@ -1,6 +1,7 @@
 
 import 'dart:io';
 import 'package:bloc/bloc.dart';
+import 'package:get_it/get_it.dart';
 import 'package:jiffy/jiffy.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -22,7 +23,7 @@ class LangCubit extends Cubit<LangState> {
 
   void getCachedLang() {
     emit(LangLoadingState());
-    final cachedLang = CacheHelper().getCachedLanguage();
+    final cachedLang = sl<CacheHelper>().getCachedLanguage();
     langCode = cachedLang;
     emit(LangSuccessState());
   }
@@ -34,7 +35,7 @@ class CacheHelper {
 
   init() async {
     sharedPreferences = await SharedPreferences.getInstance();
-    Jiffy.setLocale(sharedPreferences.getString('cachedCode') ?? 'ar');
+    // Jiffy.setLocale(sharedPreferences.getString('cachedCode') ?? 'ar');
   }
 
   Future<bool> setData({required String key, required dynamic value}) async {
@@ -82,3 +83,9 @@ class CacheHelper {
   Future<void> cacheLanguage(String code) async {
     await sharedPreferences.setString(_cachedCode, code);}}
 
+final sl = GetIt.instance;
+void initServiceLoactor() {
+  //! Whole project cubit
+
+  sl.registerLazySingleton(() => CacheHelper());
+}

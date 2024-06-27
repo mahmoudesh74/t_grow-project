@@ -25,7 +25,7 @@ class SettingPatientBloc extends Cubit<ProfileState> {
   changeLang(String lang) async {
     try {
       emit(changeLangLoading());
-      // await sl<CacheHelper>().cacheLanguage(lang);
+      await sl<CacheHelper>().cacheLanguage(lang);
       await LangCubit().changeLang(lang);
       currentLang = lang;
       emit(changeLangLoaded());

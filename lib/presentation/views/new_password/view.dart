@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:t_grow/data/core/local/app_local.dart';
 import 'package:t_grow/presentation/components/custom_bottom.dart';
 import 'package:t_grow/presentation/views/password_changed/view.dart';
 
@@ -49,7 +50,7 @@ class _NewPasswordState extends State<NewPassword> {
                 child: Row(
                   children: [
                     Text(
-                      "Create new password",
+                      "36".tr(context),
                       style: GoogleFonts.montserrat(
                           color: AppColors.fontColor, fontSize: 24),
                     )
@@ -62,7 +63,7 @@ class _NewPasswordState extends State<NewPassword> {
                   children: [
                     Expanded(
                       child: Text(
-                        "Your new password must be unique from those previously used.",
+                        "37".tr(context),
                         style: GoogleFonts.montserrat(
                             color: Colors.white, fontSize: 15),
                       ),
@@ -76,7 +77,7 @@ class _NewPasswordState extends State<NewPassword> {
                 decoration: InputDecoration(
 
                   filled: true,
-                  hintText: "Password",
+                  hintText: "6".tr(context),
                   fillColor: Colors.white,
                   border: OutlineInputBorder(
                     borderSide: const BorderSide(color: Colors.white),
@@ -94,7 +95,7 @@ class _NewPasswordState extends State<NewPassword> {
                 keyboardType: TextInputType.emailAddress,
                 decoration: InputDecoration(
                   filled: true,
-                  hintText: "Confirm Password",
+                  hintText: "13".tr(context),
                   fillColor: Colors.white,
                   border: OutlineInputBorder(
                     borderSide: const BorderSide(color: Colors.white),
@@ -119,7 +120,7 @@ class _NewPasswordState extends State<NewPassword> {
                             MaterialPageRoute(
                                 builder: (builder) => const PasswordChanged()));
                       },
-                      child: CustomBottom(name: "Reset Password", width: 344.w, height: 49.h)
+                      child: CustomBottom(name: "39".tr(context), width: 344.w, height: 49.h)
                     )
                   ],
                 ),

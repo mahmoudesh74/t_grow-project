@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:t_grow/app/app_colors.dart';
 import 'package:t_grow/app/app_images.dart';
+import 'package:t_grow/data/core/local/app_local.dart';
 
 class Home1 extends StatefulWidget {
   const Home1({super.key});
@@ -61,7 +62,7 @@ class _Home1State extends State<Home1> {
                           height: 10.h,
                         ),
                          Text(
-                          "AI algorithm",
+                           "43".tr(context),
                           style: TextStyle(
                               color: AppColors.darkColor,
                               fontSize: 16.sp,
@@ -73,7 +74,7 @@ class _Home1State extends State<Home1> {
                          Padding(
                           padding: const EdgeInsets.all(10),
                           child: Text(
-                              "Our algorithm recognizes plant and find diseases .It is also possible to give tips on how to take care of plant sbased on the huge plant database",
+                              "44".tr(context),
                               style: TextStyle(color: AppColors.darkColor,fontSize: 10.sp,fontWeight: FontWeight.w400)),
                         ),
                       ],
@@ -88,7 +89,7 @@ class _Home1State extends State<Home1> {
                     child: Padding(
                       padding: const EdgeInsets.only(left: 20),
                       child: Text(
-                        "Recently added",
+                        "48".tr(context),
                         style: TextStyle(
                             color: AppColors.darkColor,
                             fontSize: 22.sp,
@@ -108,10 +109,10 @@ class _Home1State extends State<Home1> {
                     const SizedBox(
                       width: 20,
                     ),
-                    const Expanded(
+                   Expanded(
                       child: Text(
-                        "You haven’t added\n any plants yet .",
-                        style: TextStyle(color: Colors.grey),
+                        "49".tr(context),
+                        style: const TextStyle(color: Colors.grey),
                       ),
                     ),
                   ],

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:t_grow/data/core/local/app_local.dart';
 import 'package:t_grow/presentation/components/custom_bottom.dart';
 import 'package:t_grow/presentation/views/helper_method.dart';
 import 'package:t_grow/presentation/views/loading/view.dart';
@@ -80,7 +81,7 @@ class _SignUpState extends State<SignUp> {
                         keyboardType: TextInputType.emailAddress,
                         decoration: InputDecoration(
                           filled: true,
-                          hintText: "User Name",
+                          hintText: "11".tr(context),
                           fillColor: Colors.white,
                           border: OutlineInputBorder(
                             borderSide: const BorderSide(color: Colors.white),
@@ -106,7 +107,7 @@ class _SignUpState extends State<SignUp> {
                         keyboardType: TextInputType.emailAddress,
                         decoration: InputDecoration(
                           filled: true,
-                          hintText: "Email",
+                          hintText: "12".tr(context),
                           fillColor: Colors.white,
                           border: OutlineInputBorder(
                             borderSide: const BorderSide(color: Colors.white),
@@ -133,7 +134,7 @@ class _SignUpState extends State<SignUp> {
                         keyboardType: TextInputType.emailAddress,
                         decoration: InputDecoration(
                           filled: true,
-                          hintText: " Password",
+                          hintText: "6".tr(context),
                           suffixIcon: IconButton(
                             icon: Icon(
                               _obscureText
@@ -170,7 +171,7 @@ class _SignUpState extends State<SignUp> {
                         keyboardType: TextInputType.emailAddress,
                         decoration: InputDecoration(
                           filled: true,
-                          hintText: "confirm Password",
+                          hintText: "13".tr(context),
                           fillColor: Colors.white,
                           suffixIcon: IconButton(
                             icon: Icon(
@@ -205,7 +206,7 @@ class _SignUpState extends State<SignUp> {
                                 }
                               },
                               child: CustomBottom(
-                                name: "Sing Up",
+                                name: "4".tr(context),
                                 height: 49.h,
                                 width: 344.w,
                               ));
@@ -220,7 +221,7 @@ class _SignUpState extends State<SignUp> {
                                 color: Colors.white,
                               )),
                           Text(
-                            "OR SingUp with",
+                            "14".tr(context),
                             style: GoogleFonts.montserrat(
                                 color: Colors.white, fontSize: 12),
                           ),

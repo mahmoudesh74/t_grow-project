@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:t_grow/data/core/local/app_local.dart';
 import 'package:t_grow/presentation/components/custom_bottom.dart';
 
 import '../../../app/app_colors.dart';
@@ -24,7 +25,7 @@ class _LogOutState extends State<LogOut> {
           icon: const Icon(Icons.arrow_back_ios),
         ),
         title: Text(
-          "Log Out",
+          "95".tr(context),
           style: TextStyle(
               fontSize: 24.sp,
               fontWeight: FontWeight.w600,
@@ -39,7 +40,7 @@ class _LogOutState extends State<LogOut> {
               height: 230.h,
             ),
              Center(
-              child: Text("Are you sure you want to log out? ",
+              child: Text("109".tr(context),
                   style: TextStyle(
                     fontSize: 16.sp,
                     fontWeight: FontWeight.w600,
@@ -51,7 +52,7 @@ class _LogOutState extends State<LogOut> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                CustomBottom(name: "Log Out", width: 143.w, height: 37.h),
+                CustomBottom(name: "95".tr(context), width: 143.w, height: 37.h),
                 SizedBox(
                   width: 20.w,
                 ),
@@ -60,7 +61,7 @@ class _LogOutState extends State<LogOut> {
                       Navigator.pop(context);
                     },
                     child: CustomBottom(
-                        name: "Cancel", width: 143.w, height: 37.h)),
+                        name: "110".tr(context), width: 143.w, height: 37.h)),
               ],
             )
           ],

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:t_grow/data/core/local/app_local.dart';
 import '../../../app/app_colors.dart';
 import '../../../app/app_images.dart';
 import '../login/view.dart';
@@ -41,7 +42,7 @@ class _PasswordChangedState extends State<PasswordChanged> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
-                      "Password Changed!",
+                      "40".tr(context),
                       style: GoogleFonts.montserrat(
                           color: AppColors.fontColor, fontSize: 24.sp),
                     )
@@ -55,7 +56,7 @@ class _PasswordChangedState extends State<PasswordChanged> {
                   children: [
                     Expanded(
                       child: Text(
-                        "Your password has been",
+                        "41".tr(context),
                         style: GoogleFonts.montserrat(
                             color: Colors.white, fontSize: 16.sp),
                       ),
@@ -68,7 +69,7 @@ class _PasswordChangedState extends State<PasswordChanged> {
                 child: Row(
                   children: [
                     Text(
-                      "changed successfully.",
+                      "45".tr(context),
                       style: GoogleFonts.montserrat(
                           color: Colors.white, fontSize: 16.sp),
                     ),

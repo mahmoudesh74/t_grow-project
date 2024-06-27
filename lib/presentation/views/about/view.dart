@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:t_grow/data/core/local/app_local.dart';
 
 import '../../../app/app_colors.dart';
 import '../../../app/app_images.dart';
@@ -24,7 +25,7 @@ class _AboutState extends State<About> {
           icon: const Icon(Icons.arrow_back_ios),
         ),
         title: Text(
-          "About",
+          "94".tr(context),
           style: TextStyle(
               fontSize: 24.sp,
               fontWeight: FontWeight.w600,
@@ -83,7 +84,7 @@ class _AboutState extends State<About> {
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Text( maxLines: 2,
-                              "Tgrow is the usable and great plant app that helps you to follow plant growth process.",
+                              "104".tr(context),
                               style: TextStyle(
                                 fontSize: 14.sp,
                                 fontWeight: FontWeight.w400,
@@ -112,7 +113,7 @@ class _AboutState extends State<About> {
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Text( maxLines: 2,
-                              "               You can scan the plant, identify disease, and know the treatment that you can do to your plant.",
+                              "105".tr(context),
                               style: TextStyle(
                                 fontSize: 14.sp,
                                 fontWeight: FontWeight.w400,
@@ -141,7 +142,7 @@ class _AboutState extends State<About> {
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Text( maxLines: 2,
-                              "          To help you with topics that will be vague for you. Tgrow added chat bot that you can use it freely.",
+                              "106".tr(context),
                               style: TextStyle(
                                 fontSize: 14.sp,
                                 fontWeight: FontWeight.w400,
@@ -170,7 +171,7 @@ class _AboutState extends State<About> {
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Text(
-                              "                Also we added contacts of the experts who can help you in your inquiry.",
+                              "107".tr(context),
                               style: TextStyle(
                                 fontSize: 14.sp,
                                 fontWeight: FontWeight.w400,
@@ -199,7 +200,7 @@ class _AboutState extends State<About> {
                         child: Padding(
                           padding: const EdgeInsets.all(8.0),
                           child: Text( maxLines: 2,
-                              "              Weekly Tips which added automatically to follow how you can grow healthy and freshness plant ",
+                              "108".tr(context),
                               style: TextStyle(
                                 fontSize: 14.sp,
                                 fontWeight: FontWeight.w400,

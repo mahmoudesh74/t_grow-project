@@ -1,14 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:t_grow/data/core/local/app_local.dart';
 import 'package:t_grow/presentation/components/custom_bottom.dart';
 import 'package:t_grow/presentation/views/payment2/view.dart';
 
 import '../../../app/app_colors.dart';
 import '../../../app/app_images.dart';
+import '../view10.dart';
 
 class Payment extends StatefulWidget {
-  const Payment({super.key});
+  const Payment({super.key, required this.imgURL, required this.content});
+  final String imgURL,content;
 
   @override
   State<Payment> createState() => _PaymentState();
@@ -41,7 +44,7 @@ class _PaymentState extends State<Payment> {
         ],
         title: Center(
           child: Text(
-            "Payment",
+            "66".tr(context),
             style: TextStyle(
                 fontSize: 24.sp,
                 fontWeight: FontWeight.w600,
@@ -57,7 +60,7 @@ class _PaymentState extends State<Payment> {
               Row(
                 children: [
                   Text(
-                    "Mahmoud esh",
+                    "116".tr(context),
                     style: TextStyle(
                         fontSize: 24.sp,
                         fontWeight: FontWeight.w600,
@@ -68,7 +71,7 @@ class _PaymentState extends State<Payment> {
               Row(
                 children: [
                   Text(
-                    "Welcome to Card",
+                    "67".tr(context),
                     style: TextStyle(
                         fontSize: 16.sp,
                         fontWeight: FontWeight.w600,
@@ -83,7 +86,7 @@ class _PaymentState extends State<Payment> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
                   Text(
-                    "Choose Card",
+                    "68".tr(context),
                     style: TextStyle(
                         fontSize: 16.sp,
                         fontWeight: FontWeight.w600,
@@ -121,7 +124,7 @@ class _PaymentState extends State<Payment> {
                           ),
                         ),
                         Text(
-                          "Visa",
+                          "69".tr(context),
                           style: TextStyle(
                               fontSize: 16.sp,
                               fontWeight: FontWeight.w600,
@@ -150,7 +153,7 @@ class _PaymentState extends State<Payment> {
                           ),
                         ),
                         Text(
-                          "MasterCard",
+                          "70".tr(context),
                           style: TextStyle(
                               fontSize: 15.sp,
                               fontWeight: FontWeight.w600,
@@ -179,7 +182,7 @@ class _PaymentState extends State<Payment> {
                           ),
                         ),
                         Text(
-                          "Paypal",
+                          "71".tr(context),
                           style: TextStyle(
                               fontSize: 16.sp,
                               fontWeight: FontWeight.w600,
@@ -208,7 +211,7 @@ class _PaymentState extends State<Payment> {
                           ),
                         ),
                         Text(
-                          "G Pay",
+                          "72".tr(context),
                           style: TextStyle(
                               fontSize: 16.sp,
                               fontWeight: FontWeight.w600,
@@ -225,7 +228,7 @@ class _PaymentState extends State<Payment> {
               Row(
                 children: [
                   Text(
-                    "Choose Card",
+                    "68".tr(context),
                     style: TextStyle(
                         fontSize: 16.sp,
                         fontWeight: FontWeight.w600,
@@ -293,8 +296,8 @@ class _PaymentState extends State<Payment> {
               ),
               Row(
                 children: [
-                  const Text(
-                      "Save credit card information\n For the next time"),
+                  Text(
+                      "74".tr(context)),
                   const Spacer(),
                   Switch(
                       onChanged: (value) {
@@ -316,12 +319,12 @@ class _PaymentState extends State<Payment> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => const Payment2(
-
+                            builder: (context) =>  Payment2(
+                               content: widget.content,imgURL: widget.imgURL,
                                 )));
                   },
-                  child: const CustomBottom(
-                    name: "Payment",
+                  child:  CustomBottom(
+                    name: "66".tr(context),
                     width: 203,
                     height: 37,
                     color: AppColors.clearGreenColor,

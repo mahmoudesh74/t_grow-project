@@ -14,6 +14,7 @@ import '../home1/view.dart';
 import '../home2/view.dart';
 import '../profile/view.dart';
 import '../scan/view.dart';
+import '../scan1/view.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -23,11 +24,11 @@ class HomeScreen extends StatefulWidget {
 }
 
 class _HomeScreenState extends State<HomeScreen> {
-  static const List<Widget> _widgetOptions = <Widget>[
+  static  List<Widget> _widgetOptions = <Widget>[
     Home2(),
     History1(),
     ChatBot(),
-    Scan(),
+    Scan1(),
     Profile(),
   ];
 
@@ -113,7 +114,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           height: 3.h,
                         ),
                         Text(
-                          "1".tr(context),
+                          "51".tr(context),
                           style:  TextStyle(
                               color: AppColors.greenColor,
                               fontWeight: FontWeight.w500,
@@ -142,7 +143,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           height: 4.h,
                         ),
                          Text(
-                          "History",
+                           "52".tr(context),
                           style: TextStyle(
                               color: AppColors.greenColor,
                               fontWeight: FontWeight.w500,
@@ -177,7 +178,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           height: 4.h,
                         ),
                          Text(
-                          "Chat bot",
+                           "53".tr(context),
                           style: TextStyle(
                               color: AppColors.greenColor,
                               fontWeight: FontWeight.w500,
@@ -206,7 +207,7 @@ class _HomeScreenState extends State<HomeScreen> {
                           height: 4.h,
                         ),
                          Text(
-                          "Profile",
+                           "54".tr(context),
                           style: TextStyle(
                               color: AppColors.greenColor,
                               fontWeight: FontWeight.w500,

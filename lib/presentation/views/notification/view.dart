@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:t_grow/data/core/local/app_local.dart';
 
 import '../../../app/app_colors.dart';
 import '../../../app/app_images.dart';
@@ -34,7 +35,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
           icon: const Icon(Icons.arrow_back_ios),
         ),
         title:  Text(
-          "Notification",
+          "92".tr(context),
           style: TextStyle(
               fontSize: 24.sp,
               fontWeight: FontWeight.w600,
@@ -50,7 +51,7 @@ class _NotificationScreenState extends State<NotificationScreen> {
                     curve: Curves.easeIn);
 
               },
-              child:  Text("Clear",
+              child:  Text("97".tr(context),
                   style: TextStyle(
                       fontSize: 16.sp,
                       fontWeight: FontWeight.w600,

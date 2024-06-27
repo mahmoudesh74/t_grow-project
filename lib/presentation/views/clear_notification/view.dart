@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:t_grow/data/core/local/app_local.dart';
 
 import '../../../app/app_colors.dart';
 
@@ -26,7 +27,7 @@ class _ClearNotificationState extends State<ClearNotification> {
           icon: const Icon(Icons.arrow_back_ios),
         ),
         title: Text(
-          "Notification",
+          "92".tr(context),
           style: TextStyle(
               fontSize: 24.sp,
               fontWeight: FontWeight.w600,
@@ -35,7 +36,7 @@ class _ClearNotificationState extends State<ClearNotification> {
         actions: [
           Padding(
             padding: const EdgeInsets.only(right: 10),
-            child: Text("Clear",
+            child: Text("97".tr(context),
                 style: TextStyle(
                     fontSize: 16.sp,
                     fontWeight: FontWeight.w600,
@@ -47,18 +48,12 @@ class _ClearNotificationState extends State<ClearNotification> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text("There is no ",
+            Text("98".tr(context),
                 style: TextStyle(
                     fontSize: 16.sp,
                     fontWeight: FontWeight.w600,
                     color: AppColors.greenColor.withOpacity(.4))),
-            Text(
-              "Notification ",
-              style: TextStyle(
-                  fontSize: 16.sp,
-                  fontWeight: FontWeight.w600,
-                  color: AppColors.greenColor.withOpacity(.4)),
-            ),
+
           ],
         ),
       ),

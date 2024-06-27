@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:t_grow/data/core/local/app_local.dart';
 
 
 import '../../../app/app_colors.dart';
@@ -42,7 +43,7 @@ class _StartState extends State<Start> {
               padding: EdgeInsets.only(top: 50.h),
               child:
                   Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-                Text('Take care of your plants',
+                Text("1".tr(context),
                     style: GoogleFonts.montserrat(
                         color: AppColors.fontColor, fontSize: 24)),
               ]),
@@ -64,7 +65,7 @@ class _StartState extends State<Start> {
                           color: AppColors.StartAndLogin,
                           borderRadius: BorderRadius.circular(10)),
                       child: Center(
-                        child: Text('Start',
+                        child: Text("2".tr(context),
                             style: GoogleFonts.montserrat(
                                 color: Colors.white, fontSize: 16)),
                       ),

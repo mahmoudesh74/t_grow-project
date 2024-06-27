@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:t_grow/data/core/local/app_local.dart';
 import 'package:t_grow/presentation/components/custom_bottom.dart';
 
 import '../../../app/app_colors.dart';
@@ -34,7 +35,7 @@ class _Tracking1State extends State<Tracking1> {
                 ),
               ),
               Text(
-                'Mosaic Verius',
+                "81".tr(context),
                 style: GoogleFonts.montserrat(
                     color: Colors.green[900],
                     fontWeight: FontWeight.bold,
@@ -45,7 +46,7 @@ class _Tracking1State extends State<Tracking1> {
           Row(
             children: [
               Text(
-                '26 Weeks',
+                "119".tr(context),
                 style: GoogleFonts.montserrat(
                     color: Colors.grey,
                     fontWeight: FontWeight.w700,

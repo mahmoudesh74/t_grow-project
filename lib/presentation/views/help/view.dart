@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:t_grow/data/core/local/app_local.dart';
 
 import '../../../app/app_colors.dart';
 import '../../../app/app_images.dart';
@@ -27,7 +28,7 @@ class _HelpState extends State<Help> {
             icon: const Icon(Icons.arrow_back_ios),
           ),
           title:  Text(
-            "Help",
+            "93".tr(context),
             style: TextStyle(
                 fontSize: 24.sp,
                 fontWeight: FontWeight.w600,
@@ -54,22 +55,18 @@ class _HelpState extends State<Help> {
                     child: Image.asset(AppImages.pic21),
                   ),
                 ),
-                 Text("Help Center",
+                 Text("99".tr(context),
                     style: TextStyle(
                         fontSize: 24.sp,
                         fontWeight: FontWeight.w600,
                         color: AppColors.greenColor)),
-                 Text("If you want any help or",
+                 Text("100".tr(context),
                     style: TextStyle(
                         fontSize: 16.sp,
                         fontWeight: FontWeight.w600,
                         color: AppColors.greenColor)),
-                 Text("faces any problems",
-                    style: TextStyle(
-                        fontSize: 16.sp,
-                        fontWeight: FontWeight.w600,
-                        color: AppColors.greenColor)),
-                 Text("with our app,",
+
+                 Text("101".tr(context),
                     style: TextStyle(
                         fontSize: 16.sp,
                         fontWeight: FontWeight.w600,
@@ -77,7 +74,7 @@ class _HelpState extends State<Help> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                     Text(" please go to",
+                     Text("102".tr(context),
                         style: TextStyle(
                             fontSize: 16.sp,
                             fontWeight: FontWeight.w600,
@@ -87,7 +84,7 @@ class _HelpState extends State<Help> {
                         Navigator.of(context).pushReplacement(
                             MaterialPageRoute(builder: (context) => const ChatBot()));
                       },
-                      child:  Text(" Chat bot",
+                      child:  Text("53".tr(context),
                           style: TextStyle(
                               fontSize: 16.sp,
                               fontWeight: FontWeight.w600,
@@ -103,7 +100,7 @@ class _HelpState extends State<Help> {
                       Navigator.of(context).pushReplacement(
                           MaterialPageRoute(builder: (context) => const ChatBot()));
                     },
-                    child: CustomBottom(name: ("To Chat bot"), width: 203.w, height: 37.h))
+                    child: CustomBottom(name: ("103".tr(context)), width: 203.w, height: 37.h))
               ],
             ),
           ),

@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:t_grow/app/app_colors.dart';
 import 'package:t_grow/app/app_icons.dart';
+import 'package:t_grow/data/core/local/app_local.dart';
 
 import '../../../app/app_images.dart';
 
@@ -64,11 +65,11 @@ class _ChatBot1State extends State<ChatBot1> {
                                    topRight: Radius.circular(20),
                                    bottomLeft: Radius.circular(20),
                                    bottomRight: Radius.circular(20))),
-                           child: const Padding(
-                             padding:  EdgeInsets.all(8.0),
+                           child:  Padding(
+                             padding:  const EdgeInsets.all(8.0),
                              child: Text(
-                               'Hello I am your virtual guide and will  help you in planting',
-                               style: TextStyle(
+                               "1".tr(context),
+                               style: const TextStyle(
                                    fontSize: 12, fontWeight: FontWeight.bold),
                              ),
                            ),

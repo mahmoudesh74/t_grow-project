@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:t_grow/data/core/local/app_local.dart';
 import '../../../app/app_colors.dart';
 import '../../../app/app_images.dart';
+import '../home2/view.dart';
 import '../home_screen/view.dart';
 
 class ForthPhoto extends StatefulWidget {
@@ -27,11 +29,17 @@ class _ForthPhotoState extends State<ForthPhoto> {
         ),
         Padding(
           padding: const EdgeInsets.only(top: 50, left: 300),
-          child: Text(
-            "Skip",
-            style: GoogleFonts.montserrat(
-                color: Colors.black, fontSize: 16, fontWeight: FontWeight.bold),
-          ),
+          child: InkWell(
+            onTap: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (builder) => const HomeScreen()));
+            },
+            child: Text(
+              "111".tr(context),
+              style: GoogleFonts.montserrat(color: Colors.black,
+                  fontSize: 16,fontWeight: FontWeight.bold),
+            ),
+          )
         )
       ]),
       Expanded(
@@ -46,7 +54,7 @@ class _ForthPhotoState extends State<ForthPhoto> {
                 child: Row(
                   children: [
                     Text(
-                      "04.",
+                      "27".tr(context),
                       style: GoogleFonts.montserrat(
                           color: Colors.white, fontSize: 32),
                     )
@@ -58,7 +66,7 @@ class _ForthPhotoState extends State<ForthPhoto> {
                 child: Row(
                   children: [
                     Text(
-                      "Chatting with experts",
+                      "28".tr(context),
                       style: GoogleFonts.montserrat(
                           color: Colors.white, fontSize: 24),
                     )
@@ -71,7 +79,7 @@ class _ForthPhotoState extends State<ForthPhoto> {
                   children: [
                     Expanded(
                         child: Text(
-                      "Finding solutions for plants diseases and learn how to care of plants .",
+                          "29".tr(context),
                       style: GoogleFonts.montserrat(
                           color: Colors.white, fontSize: 14),
                     ))
