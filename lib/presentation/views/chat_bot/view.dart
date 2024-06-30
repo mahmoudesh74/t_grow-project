@@ -5,6 +5,7 @@ import 'package:t_grow/data/core/local/app_local.dart';
 import 'package:t_grow/presentation/components/custom_bottom.dart';
 
 import '../../../app/app_colors.dart';
+import '../WebView.dart';
 import '../chat_bot1/view.dart';
 
 class ChatBot extends StatefulWidget {
@@ -53,7 +54,7 @@ class _ChatBotState extends State<ChatBot> {
             Center(child: Image.asset(AppImages.pic18,width: 128.w,height: 128.h,)),
              SizedBox(height: 50.h,),
             InkWell(onTap: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>const ChatBot1()));
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>const WebViewContainer()));
             },
                 child: CustomBottom(name: "87".tr(context), width: 203.w, height: 37.h))
 

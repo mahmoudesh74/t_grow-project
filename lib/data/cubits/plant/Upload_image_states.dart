@@ -1,6 +1,6 @@
 
 
-import '../../domain/models/plant/plant_model.dart';
+import '../../../domain/models/plant/plant_model.dart';
 
 class UploadImageState{}
 class UploadImageSuccessState extends UploadImageState{

@@ -4,7 +4,7 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:image_picker/image_picker.dart';
 import 'package:t_grow/data/core/local/app_local.dart';
 import 'package:t_grow/presentation/components/custom_bottom.dart';
-import 'package:t_grow/presentation/views/Upload_image_states.dart';
+import 'package:t_grow/data/cubits/plant/Upload_image_states.dart';
 import 'package:t_grow/presentation/views/plant/view.dart';
 import 'package:t_grow/presentation/views/tracking1/view.dart';
 import 'package:t_grow/presentation/views/tracking2/view.dart';
@@ -14,7 +14,7 @@ import '../../../app/app_colors.dart';
 import '../../../app/app_images.dart';
 import '../../../data/cubits/recently/recently_cubit.dart';
 import '../scan2/view.dart';
-import '../upload_image_cubit.dart';
+import '../../../data/cubits/plant/upload_image_cubit.dart';
 
 class Scan1 extends StatefulWidget {
   Scan1();

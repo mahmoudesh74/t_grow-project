@@ -211,7 +211,7 @@ class _ProfileMainState extends State<ProfileMain> {
                                   width: 266.w,
                                   height: 226.h,
                                   decoration: BoxDecoration(
-                                      color: AppColors.lColor,
+                                      color: AppColors.lColor.withOpacity(.7),
                                       borderRadius: BorderRadius.circular(24)),
                                   child: BlocBuilder<LangCubit, LangState>(
   builder: (context, state) {
@@ -222,18 +222,43 @@ class _ProfileMainState extends State<ProfileMain> {
                                         onTap:(){
                                           bloc.changeLang('ar');
                           },
-                                          child: Row(
-                                            children: [
-                                              Padding(
-                                                padding: const EdgeInsets.only(left: 20),
-                                                child: Text("117".tr(context),style: TextStyle(color: AppColors.greenColor,fontSize:20 ),),
-                                              ),
-                                            ],
+                                          child: Padding(
+                                            padding: const EdgeInsets.only(left: 20,top: 20),
+                                            child: Row(
+                                              children: [
+                                                Container(
+                                                  decoration: BoxDecoration(color: AppColors.greenColor,borderRadius: BorderRadius.circular(10)),width: 10,height: 50,),
+                                                Padding(
+                                                  padding: const EdgeInsets.only(left: 10),
+                                                  child: Text("117".tr(context),style: TextStyle(color: AppColors.greenColor,fontSize:20 ),),
+                                                ),
+                                              ],
+                                            ),
                                           )),
-                                      SizedBox(height: 2,),
-                                      Text("117".tr(context),style: TextStyle(color: AppColors.clearGreenColor),),
-                                      SizedBox(height: 10,),
-                                      Text("118".tr(context),style: TextStyle(color: AppColors.clearGreenColor),)
+                                      const SizedBox(height: 30,),
+                                      Padding(
+                                        padding: const EdgeInsets.only(right: 80),
+                                        child: Text(
+                                          "117".tr(context),
+                                          style: TextStyle(
+                                              color: AppColors.greenColor
+                                                  .withOpacity(.61),
+                                              fontSize: 16.sp,
+                                              fontWeight: FontWeight.w500),
+                                        ),
+                                      ),
+                                      const SizedBox(height: 20,),
+                                      Padding(
+                                        padding: const EdgeInsets.only(right: 80),
+                                        child: Text(
+                                          "118".tr(context),
+                                          style: TextStyle(
+                                              color: AppColors.greenColor
+                                                  .withOpacity(.61),
+                                              fontSize: 16.sp,
+                                              fontWeight: FontWeight.w500),
+                                        ),
+                                      ),
 
                                     ],
                                   );

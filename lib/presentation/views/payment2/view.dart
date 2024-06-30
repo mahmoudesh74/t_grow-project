@@ -8,8 +8,8 @@ import 'package:t_grow/presentation/views/helper_method.dart';
 import 'package:t_grow/presentation/views/treatment/view.dart';
 import '../../../app/app_colors.dart';
 import '../../../app/app_images.dart';
-import '../Upload_image_states.dart';
-import '../upload_image_cubit.dart';
+import '../../../data/cubits/plant/Upload_image_states.dart';
+import '../../../data/cubits/plant/upload_image_cubit.dart';
 
 
 class Payment2 extends StatefulWidget {

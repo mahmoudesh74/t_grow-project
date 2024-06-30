@@ -7,10 +7,10 @@ import 'package:image_picker/image_picker.dart';
 
 import 'package:t_grow/presentation/components/custom_bottom.dart';
 import 'package:t_grow/presentation/views/plant/view.dart';
-import 'package:t_grow/presentation/views/upload_image_cubit.dart';
+import 'package:t_grow/data/cubits/plant/upload_image_cubit.dart';
 
 import '../../../app/app_images.dart';
-import '../Upload_image_states.dart';
+import '../../../data/cubits/plant/Upload_image_states.dart';
 
 
 class Scan2 extends StatefulWidget {
@@ -135,7 +135,7 @@ class _Scan2State extends State<Scan2> {
                                   fontSize: 16.sp, fontWeight: FontWeight.w500))
                         ],
                       ),
-                      SizedBox(height: 10,),
+                       SizedBox(height: 10.h,),
 
                       BlocBuilder<UploadImageCubit,UploadImageState>(
                         //bloc: bloc,
@@ -145,8 +145,8 @@ class _Scan2State extends State<Scan2> {
                               bloc.uploadImage();
                               bloc.takePhoto();
                             },
-                            child: CustomBottom(
-                              name: "Got it", width: 107, height: 37,),
+                            child:  CustomBottom(
+                              name: "Got it", width: 107.w, height: 37.h,),
                           );
                         },
                       ),

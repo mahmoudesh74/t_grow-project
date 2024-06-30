@@ -6,11 +6,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
-import 'package:t_grow/presentation/components/custom_bottom.dart';
+import 'package:t_grow/presentation/views/home_screen/view.dart';
 
-import '../../../app/app_colors.dart';
-import '../../../app/app_images.dart';
-import '../tracking1/view.dart';
 
 class Treatment extends StatefulWidget {
   const Treatment({super.key,
@@ -41,15 +38,15 @@ class _TreatmentState extends State<Treatment> {
                         File(widget.imageUrl!),
                       ),
                       fit: BoxFit.fill),
-                  borderRadius: BorderRadius.only(bottomRight: Radius.circular(50),bottomLeft: Radius.circular(50))
+                  borderRadius: const BorderRadius.only(bottomRight: Radius.circular(50),bottomLeft: Radius.circular(50))
               ),
             ),
             Padding(
-              padding: const EdgeInsets.only(top: 50, left: 300),
+              padding: const EdgeInsets.only(top: 50, right: 300),
               child:
               IconButton(
                 onPressed: () {
-                  Navigator.pop(context);
+                  Navigator.push(context, MaterialPageRoute(builder: (context)=>const HomeScreen()));
                 },
                 icon: const Icon(Icons.arrow_back_ios),
               ),
@@ -60,11 +57,11 @@ class _TreatmentState extends State<Treatment> {
             child:Row(mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Padding(
-                    padding: EdgeInsets.symmetric(horizontal: 1),
+                    padding: const EdgeInsets.symmetric(horizontal: 1),
                     child: SizedBox(
                       width: 300,
                       child: Text(widget.treatmentContent!,
-                      style: TextStyle(overflow:TextOverflow.ellipsis, ),
+                      style: const TextStyle(overflow:TextOverflow.ellipsis,fontSize: 16, ),
                       maxLines: 20,
 
                       ),

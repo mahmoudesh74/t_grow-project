@@ -3,7 +3,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:dio/dio.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:t_grow/data/core/helpers/cache_helper.dart';
-import 'package:t_grow/presentation/views/login/model.dart';
+import 'package:t_grow/domain/models/login/model.dart';
 
 import 'package:t_grow/presentation/views/login/view.dart';
 import 'package:t_grow/data/cubits/login/state_cubit.dart';
